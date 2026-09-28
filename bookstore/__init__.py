@@ -1,0 +1,1 @@
+"""Tiny bookstore library."""

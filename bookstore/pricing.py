@@ -1,7 +1,6 @@
 """Price calculations."""
 
-GST_RATE = 0.18
 
-
-def price_with_tax(amount: float, rate: float = GST_RATE) -> float:
+def price_with_tax(amount: float, rate: float) -> float:
+    """Tax rate is now passed explicitly so we can support multiple regions."""
     return round(amount * (1 + rate), 2)
